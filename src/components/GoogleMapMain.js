@@ -17,8 +17,13 @@ import postData from './post';
   }
   
   export default GoogleApiWrapper({
+<<<<<<< HEAD
     apiKey: "AIzaSyDJNAWGfOemDBpp6RFlrsXaR-kaswW5DUk"
   })(Container)*/
+=======
+    apiKey: ""
+  })(Container)
+>>>>>>> 7e59cdb617ce5b662d71dc2e2896c2e138083bbc
 
   export default function MapMain() {
     const mapcenter = {
