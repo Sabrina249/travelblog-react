@@ -1,14 +1,15 @@
 import React from 'react';
 import List from './BlogPostPreview';
-import post from './post.data';
-import MapContainer from './GoogleMapMain';
+import post from './post';
+import MapMain from './GoogleMapMain';
+import './MainPage.css'
 
 
 function SplittedPage() {
     return (
-        <div>
-        <div><List post={post}/></div>
-        <div><MapContainer/></div>
+        <div className="Split_maincontainer">
+        <div className="Blog_container"><List post={post}/></div>
+        <div className="Map_container"><MapMain/></div>
         </div>
     );
 }

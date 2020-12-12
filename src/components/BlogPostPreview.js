@@ -1,15 +1,19 @@
 import React from 'react';
-import SingleBlogPost from '../components/SinglePostPreview';
+import SingleBlogPost from './BlogPostSingle';
 import './BlogPostPreview.css';
+import { Link } from 'react-router-dom'
+
 
 const List = ({post}) => {
+  let sortedList = [];
+  sortedList = post.sort((a, b) => b.visitingdate - a.visitingdate)
   return (
+    <Link to={`/post/${post.id}`}>
     <div className="Card__row">
-      <div className="Card Card__img"><SingleBlogPost post={post[0]}/></div>
-      <div className="Card Card__img"><SingleBlogPost post={post[1]}/></div>
-      <div className="Card Card__img"><SingleBlogPost post={post[2]}/></div>
-      <div className="Card Card__img"><SingleBlogPost post={post[3]}/></div>
+       {sortedList.map(post => {return(
+      <div className="Card" key={post.id}><SingleBlogPost post={post}/></div>)})}
       </div>
+    </Link>
   )
 }
 

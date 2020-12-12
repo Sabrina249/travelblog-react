@@ -1,0 +1,15 @@
+.Container_singlepost {
+    background-color: rgb(251,182,206, 0.75);
+}
+
+.Container_twoinfosinrow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Wrap_preview {
+    width: 450rem;
+}
+

@@ -1,16 +1,19 @@
 .Card__row {
-    max-width: 60%;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0;
 }
 .Card__img {
     overflow: hidden;
+    height: 25rem;
 }
 
 .Card {
     margin: 15px;
-    width: 18rem;
+    width: 25rem;
+    height: 32rem;
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -18,9 +21,11 @@
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
+    white-space: wrap;
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
+    overflow: hidden;
 }
 

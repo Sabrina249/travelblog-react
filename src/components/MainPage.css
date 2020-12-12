@@ -1,0 +1,17 @@
+.Split_maincontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.Blog_container {
+    width: 50%;
+}
+
+.Map_container {
+    width: 50%;
+    height: 100%;
+}
+

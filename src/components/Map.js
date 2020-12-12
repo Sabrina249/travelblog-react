@@ -1,7 +1,8 @@
 import React from 'react';
-import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+//import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+import GoogleMapReact from 'google-map-react'
 
-export class Map extends React.Component {
+/*export class Map extends React.Component {
     componentDidMount() {
         this.loadMap();
       }
@@ -28,10 +29,16 @@ export class Map extends React.Component {
   }
 
     render() {
+      const style = {
+        width: '50vw',
+        height: '100vh',
+        position: 'center',
+      }
       return (
         <div style={style} ref='map'>
           Loading map...
         </div>
       )
     }
-  }
+  }*/
+
