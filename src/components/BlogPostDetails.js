@@ -1,7 +1,8 @@
 import React from 'react';
-import {useParams} from 'react-router-dom'
+import {useParams, Link} from 'react-router-dom'
 import post from './post'
 import SingleBlogPost from './BlogPostSingle';
+import './BlogPostDetails.css';
 
 
 const Details = () => {
@@ -20,7 +21,8 @@ console.log(id)
 
 //display backbutton and Blogpost
   return (
-    <div>
+    <div className="Container_details">
+    <Link to={`/`}><h2>Zurück</h2></Link>
     <div><SingleBlogPost post={matchingBlog}/></div>
     </div>
   )

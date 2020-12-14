@@ -1,0 +1,10 @@
+.Container_Infowindow {
+    background-color: rgb(251,182,206);
+    width: 150px;
+    height: 300px;
+    overflow: hidden;
+    border-color: grey;
+    border-style: solid;
+}
+
+

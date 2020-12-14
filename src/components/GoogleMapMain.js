@@ -5,6 +5,7 @@ import GoogleMapReact from 'google-map-react'
 import Marker from './Marker'
 import post from './post';
 import Infowindow from './InfoWindow'
+import MapStyle from './GoogleMapMainStyle'
 
  
 /*export class Container extends React.Component {
@@ -18,7 +19,7 @@ import Infowindow from './InfoWindow'
   }
   
   export default GoogleApiWrapper({
-    apiKey: "AIzaSyDJNAWGfOemDBpp6RFlrsXaR-kaswW5DUk"
+    apiKey: ""
   })(Container)*/
 
   export default function MapMain() {
@@ -35,18 +36,19 @@ import Infowindow from './InfoWindow'
 
     const mapcenter = {
       id: 'mapcenter',
-      lat: 51.633622,
-      lng: 9.9952241,
+      lat: post[0].lat,
+      lng: post[0].lng,
     }
   
   
     return (
       <div className="App">
-        <div style={{ height: '100vh' }}>
+        <div style={{ height: '100vh', margin: '20px' }}>
           <GoogleMapReact
-            bootstrapURLKeys={{ key: 'AIzaSyDJNAWGfOemDBpp6RFlrsXaR-kaswW5DUk' }}
+            bootstrapURLKeys={{ key:'' }}
             defaultCenter={mapcenter}
-            defaultZoom={4}
+            defaultZoom={3}
+            options={{ styles: MapStyle }}
           >
             {post.map(place =>(<Marker key={place.id} lat={place.lat} lng={place.lng} showInfo={(event => handleShowInfo(place))}/>))}
             {selected && (

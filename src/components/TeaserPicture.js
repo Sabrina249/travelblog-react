@@ -3,8 +3,8 @@ import './TeaserPicture.css'
 
 const TeaserPicture = ({img, alt}) => {
     return (
-      <div className="TeaserPicture_frame">
-        <img src={img} alt={alt} />
+      <div>
+        <img className="TeaserPicture_frame" src={img} alt={alt} />
       </div>
     )
   }

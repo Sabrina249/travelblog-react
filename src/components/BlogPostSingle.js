@@ -18,7 +18,7 @@ const SingleBlogPost = ({post}) => {
           </div>
           </div>
         </div>
-      <p>{post.description}</p>
+      <p className="Text_center">{post.description}</p>
       <div className="Container_twoinfosinrow">
       <h5>{post.country}</h5>
       <h4>{post.city}</h4>
