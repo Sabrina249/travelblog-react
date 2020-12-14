@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 //import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 //import Map from './Map.js'
 import GoogleMapReact from 'google-map-react'
 import Marker from './Marker'
-import postData from './post';
+import post from './post';
+import Infowindow from './InfoWindow'
 
  
 /*export class Container extends React.Component {
@@ -17,15 +18,21 @@ import postData from './post';
   }
   
   export default GoogleApiWrapper({
-<<<<<<< HEAD
     apiKey: "AIzaSyDJNAWGfOemDBpp6RFlrsXaR-kaswW5DUk"
   })(Container)*/
-=======
-    apiKey: ""
-  })(Container)
->>>>>>> 7e59cdb617ce5b662d71dc2e2896c2e138083bbc
 
   export default function MapMain() {
+  const [selected, setSelected] = useState(null)
+  const handleShowInfo = post => {
+    setSelected(post)
+    console.log(post)
+  }
+
+  const handleCloseInfo = event => {
+  setSelected(null)
+  console.log("hello")
+  }
+
     const mapcenter = {
       id: 'mapcenter',
       lat: 51.633622,
@@ -41,9 +48,22 @@ import postData from './post';
             defaultCenter={mapcenter}
             defaultZoom={4}
           >
-            {postData.map(place =>(
-            <Marker key={place.id} lat={place.lat} lng={place.lng}/>
-            ))}
+            {post.map(place =>(<Marker key={place.id} lat={place.lat} lng={place.lng} showInfo={(event => handleShowInfo(place))}/>))}
+            {selected && (
+
+              <Infowindow
+               post={selected}
+               /*title={selected.title}
+                author={selected.authorsname}
+                visitingdate={selected.visitingdate}
+                authorsimg={selected.authorsimg}*/
+                closeInfo={handleCloseInfo}
+                /*lng={selected.lng}
+                lat={selected.lat}
+                id={selected.id}*/
+  
+              />
+            )}
           </GoogleMapReact>
         </div>
       </div>

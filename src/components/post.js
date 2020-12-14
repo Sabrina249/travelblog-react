@@ -1,16 +1,16 @@
 const post = [
     {
-      "id": 1,
-      "title": "Eilat",
-      "visitingdate": new Date ('2017-11-15'),
-      "authorsimg": "/img/Lissabon.jpg",
-      "authorsname": "Sabrina Schramme",
-      "city": "Eilat",
-      "country": "Israel",
-      "description": "Eilat ist die südlichste Stadt Israels und zugleich diejenige, die am weitesten von den großen Zentren des Landes entfernt liegt. Da praktisch die ganze Südhälfte Israels von der Wüste Negev eingenommen wird, ist die Besiedlung dort sehr dünn. Die nächste größere Stadt ist Be'er Scheva (Beerscheba) im Norden des Negev, das jedoch bereits ca. 240 Kilometer entfernt ist; die Entfernung nach Tel Aviv beträgt sogar über 300 Kilometer. Für israelische Verhältnisse sind das große Distanzen; das Land ist entlang der längeren Nord-Süd-Achse kaum 500 Kilometer lang. Zwischen Be'er Scheva und Eilat liegen nur vereinzelte, in der Regel kleinere, Siedlungen. Die extreme Randlage innerhalb des Landes hat aber auch einen Vorteil: Eilat wurde in der Vergangenheit weitgehend von Terroranschlägen verschont und konnte sich so zu einem beliebten und touristisch sehr gut erschlossenen Badeort entwickeln. Zur Beliebtheit trägt auch bei, dass es in Eilat praktisch nie regnet (im Winter gibt es gelegentlich Schauer) und dass es so warm ist, dass man das ganze Jahr über im Meer baden kann. Im Sommer können die Temperaturen mit 40° C für Mitteleuropäer schwer erträglich werden. Der israelische Küstenabschnitt am Roten Meer ist nur etwas über 10 Kilometer lang, in diesem kurzen Abschnitt befinden sich Strände, Hotels und Hafenanlagen. Im Osten Eilats liegt Jordanien mit der Stadt Aqaba, im Westen schließt sich die ägyptische Halbinsel Sinai an. (Quelle: https://de.wikivoyage.org/",
-      "image": "/img/eilat.jpg",
-      "lat": 29.55805,
-      "lng": 34.94821 
+      id: 1,
+      title: "Eilat",
+      visitingdate: new Date ('2017-11-15'),
+      authorsimg: "/img/Lissabon.jpg",
+      authorsname: "Sabrina Schramme",
+      city: "Eilat",
+      country: "Israel",
+      description: "Eilat ist die südlichste Stadt Israels und zugleich diejenige, die am weitesten von den großen Zentren des Landes entfernt liegt. Da praktisch die ganze Südhälfte Israels von der Wüste Negev eingenommen wird, ist die Besiedlung dort sehr dünn. Die nächste größere Stadt ist Be'er Scheva (Beerscheba) im Norden des Negev, das jedoch bereits ca. 240 Kilometer entfernt ist; die Entfernung nach Tel Aviv beträgt sogar über 300 Kilometer. Für israelische Verhältnisse sind das große Distanzen; das Land ist entlang der längeren Nord-Süd-Achse kaum 500 Kilometer lang. Zwischen Be'er Scheva und Eilat liegen nur vereinzelte, in der Regel kleinere, Siedlungen. Die extreme Randlage innerhalb des Landes hat aber auch einen Vorteil: Eilat wurde in der Vergangenheit weitgehend von Terroranschlägen verschont und konnte sich so zu einem beliebten und touristisch sehr gut erschlossenen Badeort entwickeln. Zur Beliebtheit trägt auch bei, dass es in Eilat praktisch nie regnet (im Winter gibt es gelegentlich Schauer) und dass es so warm ist, dass man das ganze Jahr über im Meer baden kann. Im Sommer können die Temperaturen mit 40° C für Mitteleuropäer schwer erträglich werden. Der israelische Küstenabschnitt am Roten Meer ist nur etwas über 10 Kilometer lang, in diesem kurzen Abschnitt befinden sich Strände, Hotels und Hafenanlagen. Im Osten Eilats liegt Jordanien mit der Stadt Aqaba, im Westen schließt sich die ägyptische Halbinsel Sinai an. (Quelle: https://de.wikivoyage.org/",
+      image: "/img/eilat.jpg",
+      lat: 29.55805,
+      lng: 34.94821 
     },
     {
       "id": 2,

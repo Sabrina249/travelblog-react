@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Contact from './components/Contact'
 import NewBlogPost from './components/NewPost'
 import Background from './BackgroundImage.jpg'
-import SingleBlogPost from './components/BlogPostSingle'
+import Details from './components/BlogPostDetails'
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
       <Route path="/" exact component={SplittedPage} />
       <Route path="/contact" exact component={Contact} />
       <Route path="/newpost" exact component={NewBlogPost} />
-      <Route path="/post/:id" component={SingleBlogPost}/>
+      <Route path="/post/:id" component={Details}/>
     </div>
     </Router>
   );
